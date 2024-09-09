@@ -1,44 +1,69 @@
-.header {
-  padding: 20px 0;
-}
-.nav {
-  display: flex;
-  justify-content: space-between;
-}
-.nav-logo {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-.nav-list {
+/* Header styles */
+header {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+  padding-top: 41px;
+  background-color: white;
 }
-.nav-link {
-  position: relative;
-  display: block;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  transition: 200ms ease-in;
+
+/* Logo styling */
+.logo {
+  display: flex;
+  align-items: center;
+  padding-left: 75px;
 }
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+
+/* Navigation container */
+.all-menu {
+  display: flex;
+  gap: 25px;
+  height: 43px;
 }
-.nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%) translateY(100%);
-  width: 110%;
-  height: 4px;
-  border-radius: 4px;
-  transform-origin: center;
-  animation: stretch 400ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 200ms both;
+nav {
+  background-color: rgba(241, 235, 229, 1);
+  padding: 10px 20px;
+  border-radius: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); /* Тінь */
 }
-.nav-link.active::after {
-  background: #747bff;
+/* Navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #6a4e3b;
+  font-weight: 600;
+  font-family: 'Arial', sans-serif;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #c2b3a4;
+}
+
+/* Sign up button */
+.signup-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(90deg, #cfb484 0%, #dec396 100%);
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.signup-btn:hover {
+  background: linear-gradient(90deg, #dec396 0%, #cfb484 100%);
 }
