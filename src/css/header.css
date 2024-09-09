@@ -1,8 +1,9 @@
 /* Header styles */
 header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding-top: 41px;
+  padding: 20px;
   background-color: white;
 }
 
@@ -10,21 +11,32 @@ header {
 .logo {
   display: flex;
   align-items: center;
-  padding-left: 75px;
+  padding-left: 74px;
+}
+
+.logo img {
+  height: 98px;
+  margin-right: 10px;
+}
+
+
+/* Menu container */
+.menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Розміщення контенту рівномірно */
 }
 
 /* Navigation container */
-.all-menu {
-  display: flex;
-  gap: 25px;
-  height: 43px;
-}
 nav {
   background-color: rgba(241, 235, 229, 1);
   padding: 10px 20px;
   border-radius: 30px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); /* Тінь */
+  display: flex;
+  align-items: center;
 }
+
 /* Navigation links */
 .nav-links {
   list-style: none;
@@ -32,6 +44,7 @@ nav {
   align-items: center;
   padding: 0;
   margin: 0;
+
 }
 
 .nav-links li {
@@ -48,11 +61,12 @@ nav {
 }
 
 .nav-links a:hover {
-  color: #c2b3a4;
+  color: #a38367;
 }
 
 /* Sign up button */
 .signup-btn {
+  margin-left: 20px;
   padding: 10px 20px;
   font-size: 16px;
   font-weight: bold;
