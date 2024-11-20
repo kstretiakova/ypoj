@@ -1,8 +1,7 @@
 .search {
-    background-color: #2e2f42;
     padding: 400px 0px;
     margin-top: 25px;
-    background-image: url(../img/desktop/Rectangle.png);
+    background-image: url(../img/desktop/Rectangle.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -11,11 +10,13 @@
 .buttons {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-.button {
-
+.button-search {
+    font-family: "DM Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
     color: white;
     padding: 15px 40px;
     border-radius: 50px;
@@ -30,6 +31,10 @@
 
 
 .small-text {
+    font-family: "DM Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     font-size: 14px;
     color: #ccc;
 }

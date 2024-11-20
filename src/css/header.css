@@ -24,17 +24,7 @@ header {
 .menu-container {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Розміщення контенту рівномірно */
-}
-
-/* Navigation container */
-nav {
-  background-color: rgba(241, 235, 229, 1);
-  padding: 10px 20px;
-  border-radius: 30px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); /* Тінь */
-  display: flex;
-  align-items: center;
+  justify-content: space-between; 
 }
 
 /* Navigation links */
@@ -42,42 +32,63 @@ nav {
   list-style: none;
   display: flex;
   align-items: center;
-  padding: 0;
-  margin: 0;
-
 }
 
-.nav-links li {
+.back {
+  width: 361px;
+  height: 43px;
+  background: linear-gradient(90deg, 
+    rgba(136, 84, 46, 0.1) 4%, 
+    rgba(159, 128, 92, 0.1) 20%, 
+    rgba(232, 216, 186, 0.1) 44%, 
+    rgba(173, 144, 83, 0.1) 62%, 
+    rgba(114, 77, 41, 0.1) 90.6%, 
+    rgba(111, 74, 39, 0.1) 92%, 
+    rgba(70, 30, 24, 0.1) 100%
+);
+  border-radius: 20px;
+  stroke-width: 1px;
+stroke: #000;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 7px;
+}
+.top-names {
+  font-family: "Kyiv Type Sans", serif;
+  width: 55px;
+  height: 14px;
+  letter-spacing: 0.3px;
   margin: 0 15px;
+  opacity: 100%;
 }
 
-.nav-links a {
+.top-links {
   text-decoration: none;
-  font-size: 16px;
   color: #6a4e3b;
-  font-weight: 600;
-  font-family: 'Arial', sans-serif;
+  opacity: 100%;
+  font-weight: lighter;
   transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-  color: #a38367;
 }
 
 /* Sign up button */
 .signup-btn {
-  margin-left: 20px;
-  padding: 10px 20px;
+    font-size: 16px;
+  padding-top: 12px;
+  padding-left: 29px;
+  width: 119px;
+  height: 41px;
+  margin-right: 70px;
+  margin-left: 24px;
   font-size: 16px;
-  font-weight: bold;
-  color: white;
-  background: linear-gradient(90deg, #cfb484 0%, #dec396 100%);
+  font-weight: lighter;
+  color: #422011;
+  background: linear-gradient(90deg, #ae9155 0%, #e8d8ba 56.31%);
   border: none;
   border-radius: 20px;
   text-decoration: none;
-  transition: background 0.3s ease;
-}
-
-.signup-btn:hover {
-  background: linear-gradient(90deg, #dec396 0%, #cfb484 100%);
+  transition:  0.3s ease;
 }
