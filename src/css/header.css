@@ -35,7 +35,6 @@ header {
 }
 
 .back {
-  width: 361px;
   height: 43px;
   background: linear-gradient(90deg, 
     rgba(136, 84, 46, 0.1) 4%, 
@@ -58,10 +57,9 @@ stroke: #000;
   padding-top: 7px;
 }
 .top-names {
-  font-family: "Kyiv Type Sans", serif;
-  width: 55px;
+  font-weight: 700;
   height: 14px;
-  letter-spacing: 0.3px;
+  letter-spacing: 1px;
   margin: 0 15px;
   opacity: 100%;
 }
@@ -76,14 +74,14 @@ stroke: #000;
 
 /* Sign up button */
 .signup-btn {
-    font-size: 16px;
-  padding-top: 12px;
-  padding-left: 29px;
+  padding-top: 11px;
+  padding-left: 25px;
   width: 119px;
   height: 41px;
   margin-right: 70px;
   margin-left: 24px;
-  font-size: 16px;
+  font-size: 17px;
+  letter-spacing: 1px;
   font-weight: lighter;
   color: #422011;
   background: linear-gradient(90deg, #ae9155 0%, #e8d8ba 56.31%);
