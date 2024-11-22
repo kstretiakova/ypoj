@@ -10,8 +10,12 @@
         rgba(136, 84, 46, 0.36) 96%);
     margin-top: 105px;
 }
-
+.logo-section {
+    margin-left: 108px;
+}
 .footer-content {
+    font-family: "KyivTypeSans-Regular", serif;
+    padding-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,19 +30,27 @@
     font-weight: bold;
 }
 
-.links,
-.socials {
+.links {
+    margin-top: 12px;
+    margin-right: 108px;
+    margin-left: 87px;
     display: flex;
-    gap: 15px;
+    gap: 45px;
+}
+.socials {
+    margin-top: 10px;
+    margin-right: 108px;
+    display: flex;
+    gap: 45px;
 }
 
 .links a,
 .socials a {
     text-decoration: none;
-    color: #3b1f1a;
-    font-size: 14px;
+    color: rgba(66, 32, 17, 0.7);
+    font-size: 16px;
     font-weight: 400;
-    transition: color 0.3s;
+    transition: color 1s;
 }
 
 .links a:hover,
@@ -46,6 +58,11 @@
     color: #000;
 }
 
+.socials svg:hover {
+    transition: transform .9s ease;
+    transform: scale(1.2)
+}
 .icon {
     font-size: 18px;
 }
+

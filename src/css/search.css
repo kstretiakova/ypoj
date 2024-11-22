@@ -1,40 +1,92 @@
-.search {
-    padding: 400px 0px;
-    margin-top: 25px;
+.background {
+  background-color: #2e2f42;
+  padding: 400px 0px;
+  margin-top: 25px;
+  background-image: url(../img/desktop/Rectangle.jpg);
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .background {
     background-image: url(../img/desktop/Rectangle.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  }
 }
 
-.buttons {
-    display: flex;
-    flex-direction: column;
+.button-list {
+  list-style: none;
+  margin-left: 85px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.button-search {
-    font-family: "DM Sans", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: italic;
-    color: white;
-    padding: 15px 40px;
-    border-radius: 50px;
-    margin: 10px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 20px;
-    display: inline-block;
-    cursor: pointer;
-    transition: background-color 0.3s;
+.button {
+  font-family: "DM Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+  width: 344px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 28px;
+  background-color: rgba(57, 31, 19, 0.6);
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
+.button-third {
+  font-family: "DM Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+  width: 344px;
+  height: 60px;
+  display: inline-block;
+  padding: 8px 28px;
+  background-color: rgba(57, 31, 19, 0.6);
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
 
-.small-text {
-    font-family: "DM Sans", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 14px;
-    color: #ccc;
+.small {
+  font-family: "DM Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.71);
+  
+}
+
+.button:hover,
+.button-third:hover {
+  background-color: rgba(57, 31, 19, 0.8);
+  transform: scale(1.05);
+}
+
+.button svg {
+  margin-left: auto;
+  transition: transform 0.3s ease;
+}
+
+.button:hover svg {
+  transform: scale(1.2);
 }
