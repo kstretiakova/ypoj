@@ -1,0 +1,16 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+/* Common styles */
+@import url('../fonts/fonts.css');
+@import url('./common.css');
+@import url('./reset.css');
+
+
+/* Sections style */
+@import url('./contact/header-contact.css');
+@import url('./contact/form-contact.css');
+@import url('./contact/footer-contact.css');
