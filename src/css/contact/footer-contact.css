@@ -1,0 +1,68 @@
+.footer {
+    height: 116px;
+    padding: 20px 0;
+    background: linear-gradient(90deg, 
+        rgba(70, 30, 24, 0.36) 0%, 
+        rgba(111, 74, 39, 0.36) 8%, 
+        rgba(173, 144, 83, 0.36) 38%, 
+        rgba(232, 216, 186, 0.46) 56%, 
+        rgba(159, 128, 92, 0.36) 80%, 
+        rgba(136, 84, 46, 0.36) 96%);
+    margin-top: 105px;
+}
+.logo-section {
+    margin-left: 108px;
+}
+.footer-content {
+    font-family: "KyivTypeSans-Regular", serif;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #3b1f1a;
+}
+
+.brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.links {
+    margin-top: 12px;
+    margin-right: 108px;
+    margin-left: 87px;
+    display: flex;
+    gap: 45px;
+}
+.socials {
+    margin-top: 10px;
+    margin-right: 108px;
+    display: flex;
+    gap: 45px;
+}
+
+.links a,
+.socials a {
+    text-decoration: none;
+    color: rgba(66, 32, 17, 0.7);
+    font-size: 16px;
+    font-weight: 400;
+    transition: color 1s;
+}
+
+.links a:hover,
+.socials a:hover {
+    color: #000;
+}
+
+.socials svg:hover {
+    transition: transform .9s ease;
+    transform: scale(1.2)
+}
+.icon {
+    font-size: 18px;
+}
+
