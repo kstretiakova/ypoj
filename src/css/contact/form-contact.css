@@ -1,0 +1,107 @@
+ .contact-container {
+    margin-left: 102px;
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 750px;
+    position: relative;
+  }
+
+  .contact-form,
+  .get-in-touch {
+    width: 48%;
+  }
+
+  .contact-form h2,
+  .get-in-touch h2 {
+    font-size: 1.5em;
+    color: #4b3621;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px 35px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background: linear-gradient(to right, #f8f4f1, #fff);
+    font-size: 1em;
+    font-style: italic;
+    color: #422011;
+  }
+
+  .contact-form textarea {
+    resize: none;
+    height: 80px;
+  }
+
+  .contact-form button {
+    padding: 10px 20px;
+    background-color: #a67c52;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .contact-form button:hover {
+    background-color: #8c643f;
+  }
+
+  .get-in-touch {
+    text-align: center;
+  }
+
+  .get-in-touch h2 {
+    margin-bottom: 30px;
+  }
+
+  .get-in-touch p {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    color: #422011;
+  }
+
+  .get-in-touch .icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #422011;
+    color: white;
+    border-radius: 50%;
+    margin-right: 21px;
+    font-size: 1em;
+  }
+
+  a {
+    text-decoration: none;
+    color: #422011;
+    font-style: italic;
+  }
+
+  .spacing {
+    margin-top: 136px;
+  }

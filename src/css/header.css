@@ -3,8 +3,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background-color: white;
+  padding: 20px 40px; /* Більше простору з боків */
+  background-color: white; /* Залишаємо білий фон */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Легке тінювання для більш сучасного вигляду */
+  position: sticky; /* Фіксація хедера при скролінгу */
+  top: 0;
+  z-index: 100; /* Щоб хедер залишався поверх іншого контенту */
 }
 
 /* Logo styling */
@@ -16,7 +20,6 @@ header {
 
 .logo img {
   height: 98px;
-  margin-right: 10px;
 }
 
 
@@ -71,13 +74,23 @@ stroke: #000;
   font-weight: lighter;
   transition: color 0.3s ease;
 }
+.nav-links .top-links {
+  text-decoration: none;
+  color: #6a4e3b; 
+  font-weight: 400; 
+  transition: color 0.3s ease, transform 0.2s ease; 
+}
 
+.nav-links .top-links:hover {
+  color: #ae9155; 
+  transform: scale(1.05); 
+}
 /* Sign up button */
 .signup-btn {
-  padding-top: 11px;
+ padding-top: 11px;
   padding-left: 25px;
-  width: 119px;
-  height: 41px;
+  width: 119px; 
+  height: 41px; 
   margin-right: 70px;
   margin-left: 24px;
   font-size: 17px;
@@ -86,7 +99,25 @@ stroke: #000;
   color: #422011;
   background: linear-gradient(90deg, #ae9155 0%, #e8d8ba 56.31%);
   border: none;
-  border-radius: 20px;
+  border-radius: 30px; 
   text-decoration: none;
-  transition:  0.3s ease;
+  transition: transform 0.2s ease; 
+}
+
+.signup-btn:hover {
+  transform: translateY(-0.5px); 
+  background: linear-gradient(90deg, #e8d8ba 0%, #ae9155 56.31%); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+.nav-links .top-links:hover {
+  color: #ae9155; 
+  transform: translateY(-3px); 
+}
+
+.nav-links .top-links:focus {
+  color: #ae9155; 
+  transform: translateY(-3px);
+  outline: none;
 }
