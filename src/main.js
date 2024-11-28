@@ -5,14 +5,14 @@ document.addEventListener("DOMContentLoaded", () => {
       email: form.querySelector('input[name="email"]'),
     };
   
-    // Функція для додавання/зняття червоної рамки
+    // для додавання і зняття червоної рамки
     function setErrorBorder(field, showError) {
       if (showError) {
         field.style.transition = "border-color 0.3s ease, box-shadow 0.3s ease";
-        field.style.border = "0.4px solid rgba(255, 0, 0, 0.5)"; // Прозорий червоний колір
+        field.style.border = "0.4px solid rgba(255, 0, 0, 0.3)"; //  тут червоний колір
         field.style.boxShadow = "0 0 6px rgba(255, 0, 0, 0.3)";
       } else {
-        field.style.border = "1px solid #ddd"; // Повернення до стандартного стилю
+        field.style.border = "1px solid #ddd"; // повертаю до стандартного стилю
         field.style.boxShadow = "none";
       }
     }
@@ -20,27 +20,27 @@ document.addEventListener("DOMContentLoaded", () => {
     // Додавання обробника введення тексту (input event)
     Object.values(requiredFields).forEach((field) => {
       field.addEventListener("input", () => {
-        setErrorBorder(field, false); // При введенні тексту рамка зникає
+        setErrorBorder(field, false); // при введенні тексту рамка буде зникати
       });
     });
   
     form.addEventListener("submit", (event) => {
-      event.preventDefault(); // Зупиняє стандартну відправку форми
+      event.preventDefault(); // зупин стандартну відправку форми
   
       let isValid = true;
   
-      // Перевірка обов'язкових полів
+      // тут перевіряю обов'язкові поля
       Object.entries(requiredFields).forEach(([key, field]) => {
         if (!field.value.trim()) {
-          setErrorBorder(field, true); // Додати червону рамку
+          setErrorBorder(field, true); // додаю червону рамку
           isValid = false;
         }
       });
   
-      // Якщо є помилки, зупиняємо відправку
+      // якщо є якісь помилки, відправка зупиняється
       if (!isValid) return;
   
-      // Формування повідомлення для відправки
+      // формування повідомлення для відправки
       const formData = new FormData(form);
       const messageBody = `
         First Name: ${formData.get("first_name") || "Not provided"}\n
@@ -49,11 +49,11 @@ document.addEventListener("DOMContentLoaded", () => {
         Message: ${formData.get("message") || "Not provided"}
       `;
   
-      // Відправка повідомлення на два email
+      // на два імейли
       sendEmail("yachtdreamjob@gmail.com", messageBody);
       sendEmail("ktretyakova1927@gmail.com", messageBody);
   
-      // Нормальна відправка форми
+      // нормальна відправка форми
       form.submit();
     });
   
